@@ -25,7 +25,7 @@
 	</p>
 	<div class="group flex gap-4 flex-wrap">
 		<a href="#projects" class="btn variant-filled"> Projects</a>
-		<a href="/resume" class="btn variant-filled"> Skills</a>
+		<a href="#skills" class="btn variant-filled"> Skills</a>
 		<a href="/resume" class="btn variant-filled"> Resume</a>
 		<a href="#contact" class="btn bg-gradient-to-br from-red-500 to-yellow-500"> Contact</a>
 	</div>
