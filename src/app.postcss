@@ -1,2 +1,22 @@
 /* Write your global styles here, in PostCSS syntax */
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+@font-face {
+	font-family: 'Rubik';
 
+	src: url('/fonts/Rubik-Bold.ttf'), url('/fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono-Regular.ttf'), url('/fonts/RobotoMono-Medium.ttf');
+}
+
+:root {
+	--theme-font-family-heading: 'Rubik', sans-serif;
+	--theme-font-family-base: 'Roboto Mono', monospace;
+	font-size: 18px;
+	/* ... */
+}

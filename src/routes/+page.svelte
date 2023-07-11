@@ -1,8 +1,32 @@
+<script>
+	import { Avatar } from '@skeletonlabs/skeleton';
+</script>
+
 <svelte:head>
-  <title>Thiago Magano - Portfolio - Home</title>
+	<title>Thiago Magano - Portfolio - Home</title>
 </svelte:head>
 
-<h1>Welcome to Thiago Magano's Portfolio</h1>
+<div class="container mx-auto p-8 space-y-8 flex items-center justify-center flex-col">
+	<Avatar src="/images/avatar.jpg" width="w-64" rounded="rounded-full" />
 
-<p>🧑‍🏭 Work in progress.... 🧑‍🏭 </p>
+	<h1 class="h1 text-center">
+		<span
+			class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone"
+		>
+			Hi, I'm Thiago Magano 👋</span
+		>
+	</h1>
 
+	<p>
+		I am a passionate full-stack software engineer dedicated to problem-solving and improving the
+		lives of others. With my background as a frontend at SENAI-RS and my experience as an educator
+		in a web development bootcamps, I have honed my skills in delivering impactful solutions. While
+		currently freelancing, I am constantly seeking personal growth and eagerly embracing new
+		challenges. Let's connect and have a discussion about how I can best assist you! 😊
+	</p>
+	<div class="group flex gap-4 flex-wrap">
+		<a href="#contact" class="btn variant-filled"> Contate-Me</a>
+		<a href="#projects" class="btn variant-filled"> Projetos</a>
+		<a href="/resume" class="btn variant-filled"> Currículo</a>
+	</div>
+</div>
