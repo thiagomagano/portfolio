@@ -13,9 +13,16 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">THI</strong>
+				<a href="/"><strong class="text-xl uppercase">THI</strong></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<a
+					class="btn btn-sm variant-ghost-secondary"
+					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
+				>
+					Resume
+				</a>
+
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://linkedin.com/in/thiagomagano"
