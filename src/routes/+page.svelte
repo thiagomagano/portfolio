@@ -1,5 +1,6 @@
 <script>
 	import { Avatar } from '@skeletonlabs/skeleton';
+	import { projects } from '$data/data.js';
 </script>
 
 <svelte:head>
@@ -12,7 +13,7 @@
 	<h1 class="h1 text-center">
 		Hello, I'm <span
 			class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone"
-			>Thiago Magano
+			>Thiago Magano - {projects.name}
 		</span> 👋
 	</h1>
 
