@@ -1,5 +1,5 @@
 <script>
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 	// This contains the bulk of Skeletons required styles:
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 
@@ -13,40 +13,26 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<a href="/"><strong class="text-xl uppercase">THI</strong></a>
+				<a href="/"><strong class="text-xl uppercase">🧪 THI </strong></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-secondary"
-					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
+				<a href="/projects" class="btn btn-sm variant-ghost-surface"
+					><iconify-icon icon="mdi:code-tags" width="24" /> <span>Projects</span></a
 				>
-					Resume
-				</a>
+				<a href="/skills" class="btn btn-sm variant-ghost-surface"
+					><iconify-icon icon="mdi:ninja" width="24" /> <span>Skills</span></a
+				>
 
 				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://linkedin.com/in/thiagomagano"
-					target="_blank"
-					rel="noreferrer"
+					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
+					class="btn btn-sm variant-ghost-tertiary"
 				>
-					LinkedIn
+					<iconify-icon icon="mdi:resume" width="24" />
+					<span>Resume</span>
 				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/thiagomagano"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/thimagano"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
+				<!-- <a href="/contact" class="btn btn-sm variant-ghost-surface"
+					><iconify-icon icon="mdi:card-account-mail-outline" width="24" /> <span>Contact</span></a
+				> -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

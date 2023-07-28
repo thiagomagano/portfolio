@@ -5,6 +5,7 @@ export const projects = [
     title: "Cia do Fusca",
     stack: ["sveltekit", "CSS", "HTML", "Javascript"],
     description: "É um website desenvolvido para loja de carros antigos Cia do Fusca, utilizando as tecnologias mais inovadoras do mercado, afim de melhor a experiência online do cliente da loja.",
+    logo: "ciadofusca.png",
     printsURL: ["ciadofusca-print-001", "ciadofusca-print-002", "ciadofusca-print-003"],
     url: "https://ciadofusca.com.br",
     repo: "https://github.com/thiagomagano/ciadofusca"
