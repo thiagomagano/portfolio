@@ -2,12 +2,18 @@
 	import Wip from '$lib/components/Wip.svelte';
 	import { projects } from '$data/projects.js';
 </script>
+<Wip />
+<div class="container mx-auto text-center p-8  space-y-8">
 
-<div class="container mx-auto p-8 space-y-8 flex items-center justify-center flex-col">
-	<h2 class="h2">Projects</h2>
+
+<h2 class="h2">Projects</h2>
+
+<div class="flex items-center justify-center gap-4 flex-col">
+	
 	{#each projects as project}
-		<a href="/projects/{project.id}" class="card">
-			<header>
+		
+			<div class="card">
+      <header>
 				<!-- <img src="images/{project.url[0]}" alt="Capa do projeto {project.title}" /> -->
 			</header>
 
@@ -18,20 +24,21 @@
 						{project.description}
 					</p>
 				</article>
-				<p>Demo:{project.url}</p>
-				<p>Repo:{project.repo}</p>
+				<p><a href={project.url}>Demo:{project.url}</a></p>
+				<p>Repo:<a href={project.repo}>{project.repo}</a></p>
 			</div>
 
 			<hr class="opacity-50" />
 			<footer>
-				<ul class="flex gap-4">
+				<ul class="flex gap-4 items-center justify-center p-2">
 					{#each project.stack as tech}
-						<li>{tech}</li>
+						<li><img src="/images/logos/{tech}.svg" alt="{tech} logo" class="w-12 bg-surface-700 p-2"></li>
+					
 					{/each}
 				</ul>
 			</footer>
-		</a>
+      </div>
+		
 	{/each}
 </div>
-
-<Wip />
+</div>
