@@ -5,7 +5,7 @@
 
 	import '../app.postcss';
 
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Avatar } from '@skeletonlabs/skeleton';
 </script>
 
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
@@ -13,14 +13,17 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<a href="/"><strong class="text-xl uppercase">🧪 THI </strong></a>
+				<a href="/" class="flex items-center gap-4">
+					<Avatar src="/images/avatar.jpg" width="w-12" rounded="rounded-full" />
+					<strong class="text-lg uppercase"> Thiago Magano </strong>
+				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a href="/projects" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:code-tags" width="24" /> <span>Projects</span></a
+					><iconify-icon icon="mdi:code-tags" width="24" /> <span>Trampos</span></a
 				>
-				<a href="/skills" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:ninja" width="24" /> <span>Skills</span></a
+				<a href="/contact" class="btn btn-sm variant-ghost-surface"
+					><iconify-icon icon="mdi:message" width="24" /> <span>Fale Comigo</span></a
 				>
 
 				<a
@@ -28,11 +31,8 @@
 					class="btn btn-sm variant-ghost-tertiary"
 				>
 					<iconify-icon icon="mdi:resume" width="24" />
-					<span>Resume</span>
+					<span>Currículo?</span>
 				</a>
-				<!-- <a href="/contact" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:card-account-mail-outline" width="24" /> <span>Contact</span></a
-				> -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

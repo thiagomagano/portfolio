@@ -1,3 +1,13 @@
-<div class="w-full h-full grid place-items-center">
-	<p>👷‍♂️ Work in Progress... 👷‍♂️</p>
+<div class="w-full h-full grid place-items-center justify-center">
+	<div class="flex gap-2 flex-col">
+		<p>
+			👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️
+		</p>
+		<p class="text-center">
+			Ops, ainda não tem nada aqui! Nossos engenheiros ainda estão trabalhando nessa página.
+		</p>
+		<p>
+			👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️👷‍♂️
+		</p>
+	</div>
 </div>
