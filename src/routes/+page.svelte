@@ -16,11 +16,7 @@
 		</span>
 		👋
 	</h1>
-	<!-- <p>
-		I am a software engineer dedicated to problem-solving. While currently freelancing, I am
-		constantly seeking personal growth and eagerly embracing new challenges. Let's connect and have
-		a discussion about how I can best assist you! 😊
-	</p> -->
+
 	<p>
 		Eu desenvolvo coisas pra rede mundial de computadores e resolvo problemas perguntando pro
 		Google!
