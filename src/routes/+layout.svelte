@@ -42,7 +42,7 @@
 		</AppBar>
 	</svelte:fragment>
 	<slot />
-	<svelte:fragment slot="footer">
+	<svelte:fragment slot="pageFooter">
 		<div class=" bg-opacity-75 text-center">
 			<div
 				class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center items-center gap-4"

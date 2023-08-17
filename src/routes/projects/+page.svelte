@@ -11,14 +11,14 @@
 				<div class="h-1 w-20 bg-surface-500 rounded" />
 			</div>
 			<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
-				Aqui estão os principais projetos que desenvolvi sozinho, você pode clicar nos cards para
-				saber mais informações.
+				Aqui estão os principais projetos que desenvolvi, você pode clicar nos cards para saber mais
+				informações sobre eles.
 			</p>
 		</div>
 
 		<div class="flex flex-wrap -m-4">
-			{#each projects as { logo, title, subtitle, description, repo, url }}
-				<Card {logo} {title} {subtitle} {description} {repo} {url} />
+			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
+				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}
 		</div>
 	</div>

@@ -5,6 +5,10 @@
 	export let description: string = 'A  DESCRIPTION HERE';
 	export let repo: string = '';
 	export let url: string = '';
+	export let stack: string[] = ['javascript, css, html'];
+	export let slug: string = '404';
+
+	const ICON_SIZE = '36px';
 </script>
 
 <div class="xl:w-1/4 md:w-1/2 p-4 flex-shrink">
@@ -24,12 +28,20 @@
 		<p class="leading-relaxed text-base flex-grow">
 			{description}
 		</p>
+
+		<ul class="flex gap-4 items-center p-2">
+			{#each stack as tech}
+				<li class="text-gray-300">
+					<iconify-icon icon="simple-icons:{tech}" width={ICON_SIZE} />
+				</li>
+			{/each}
+		</ul>
 		<div class="flex gap-4 items-center justify-between">
 			<p>
-				<a href={repo}><iconify-icon icon="mdi:github" width="36px" /></a>
-				<a href={url}><iconify-icon icon="mdi:open-in-new" width="36px" /></a>
+				<a href={url} target="_blank"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} /></a>
+				<a href={repo} target="_blank"><iconify-icon icon="mdi:github" width={ICON_SIZE} /></a>
 			</p>
-			<p><a href={repo} class="btn variant-filled-primary uppercase">Saiba mais</a></p>
+			<p><a href="/projects/{slug}" class="btn variant-filled-primary uppercase">Saiba mais</a></p>
 		</div>
 	</div>
 </div>

@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="container mx-auto p-8 space-y-8 flex items-center justify-center flex-col text-center">
-	<Avatar src="/images/avatar.jpg" width="w-64" rounded="rounded-full" />
+	<Avatar src="/images/avatar.jpg" width="w-64" rounded="rounded-full" initials="TM" />
 
 	<h1 class="h1 text-center">
 		Prazer, eu sou <span
