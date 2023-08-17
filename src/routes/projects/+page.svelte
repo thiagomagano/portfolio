@@ -1,50 +1,25 @@
-<script lang="ts">
-	import Wip from '$lib/components/Wip.svelte';
-	import { projects } from '$data/projects.js';
+<script>
+	import Card from '$lib/components/Card.svelte';
+	import { projects } from '$data/projects';
 </script>
 
-<Wip />
-<div class="container mx-auto text-center p-8 space-y-8">
-	<h2 class="h2">Trampos</h2>
-
-	<div class="flex items-center justify-center gap-4">
-		{#each projects as project}
-			<div class="card max-w-md h-full min-h-[450px]">
-				<header>
-					<!-- <img src="images/{project.url[0]}" alt="Capa do projeto {project.title}" /> -->
-				</header>
-
-				<div class="p-4 space-y-4">
-					<h4 class="h4">{project.title}</h4>
-					<p class="h6">{project.subtitle}</p>
-
-					<article>
-						<p>
-							{project.description}
-						</p>
-					</article>
-					<div class="flex gap-4 items-center justify-center">
-						<p><a href={project.repo} class="btn variant-filled-primary">Saiba mais</a></p>
-						<p><a href={project.repo}><iconify-icon icon="mdi:github" width="36px" /></a></p>
-						<p><a href={project.url}><iconify-icon icon="mdi:open-in-new" width="36px" /></a></p>
-					</div>
-				</div>
-
-				<hr class="opacity-50" />
-				<footer>
-					<ul class="flex gap-4 items-center justify-center p-2">
-						{#each project.stack as tech}
-							<li>
-								<img
-									src="/images/logos/{tech}.svg"
-									alt="{tech} logo"
-									class="w-12 bg-surface-700 p-2"
-								/>
-							</li>
-						{/each}
-					</ul>
-				</footer>
+<section class="">
+	<div class="container px-5 py-24 mx-auto">
+		<div class="flex flex-wrap w-full mb-20">
+			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Projetos</h1>
+				<div class="h-1 w-20 bg-surface-500 rounded" />
 			</div>
-		{/each}
+			<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+				Aqui estão os principais projetos que desenvolvi sozinho, você pode clicar nos cards para
+				saber mais informações.
+			</p>
+		</div>
+
+		<div class="flex flex-wrap -m-4">
+			{#each projects as { logo, title, subtitle, description, repo, url }}
+				<Card {logo} {title} {subtitle} {description} {repo} {url} />
+			{/each}
+		</div>
 	</div>
-</div>
+</section>
