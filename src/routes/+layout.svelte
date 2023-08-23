@@ -16,6 +16,7 @@
 	export let data;
 
 	const SOCIAL_ICON_SIZE = '24';
+	$: console.log(data.url);
 </script>
 
 <Toast position="t" />
@@ -26,15 +27,33 @@
 			<svelte:fragment slot="lead">
 				<a
 					href="/"
-					class="btn btn-sm border-b-transparent border-b-4 hover:border-b-primary-500 hover:text-opacity-75"
+					class="btn btn-sm border-b-4 hover:border-b-primary-500 hover:text-opacity-75 {data.url ===
+					'/'
+						? 'border-b-surface-500'
+						: 'border-b-transparent'}"
 				>
 					<span>Thiago Magano</span>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<NavLink href="/projects" icon="mdi:code-tags" label="Meus Projetos" />
-				<NavLink href="/about" icon="mdi:about-outline" label="Quem eu sou?" />
-				<NavLink href="/contact" icon="mdi:message-outline" label="Fale Comigo" />
+				<NavLink
+					href="/projects"
+					icon="mdi:code-tags"
+					label="Meus Projetos"
+					active={data.url === '/projects'}
+				/>
+				<NavLink
+					href="/about"
+					icon="mdi:about-outline"
+					label="Quem eu sou?"
+					active={data.url === '/about'}
+				/>
+				<NavLink
+					href="/contact"
+					icon="mdi:message-outline"
+					label="Fale Comigo"
+					active={data.url === '/contact'}
+				/>
 				<NavLink
 					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
 					icon="mdi:resume"

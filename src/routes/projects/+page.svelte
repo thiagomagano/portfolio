@@ -16,8 +16,8 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 grid-cols-1">
-			{#each dummyProjects as { logo, title, subtitle, description, repo, url, stack, slug }}
+		<div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
 				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}
 		</div>

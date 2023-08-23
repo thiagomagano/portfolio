@@ -11,41 +11,39 @@
 	const ICON_SIZE = '36px';
 </script>
 
-<div class="p-4 w-full min-h-[300px]">
-	<div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg flex flex-col gap-4">
-		<div class="flex items-center justify-center h-44">
-			<img
-				class="rounded w-80 align-middle object-cover object-center"
-				src="/images/logos/{logo}"
-				alt="content"
-			/>
-		</div>
+<div class="card flex flex-col gap-4 p-4 shadow-lg variant-glass text-center">
+	<div class="flex items-center justify-center h-44">
+		<img
+			class="rounded w-80 align-middle object-cover object-center"
+			src="/images/logos/{logo}"
+			alt="content"
+		/>
+	</div>
 
-		<div>
-			<h3 class="tracking-widest text-surface-400 text-xs font-medium title-font mb-1">
-				{subtitle}
-			</h3>
-			<h2 class="text-lg text-white font-medium title-font">{title}</h2>
-		</div>
+	<div class="text-center">
+		<h3 class="tracking-widest text-surface-400 text-xs font-medium title-font mb-1">
+			{subtitle}
+		</h3>
+		<h2 class="text-lg text-white font-medium title-font uppercase">{title}</h2>
+	</div>
 
-		<p class="leading-relaxed text-base flex-grow">
-			{description}
+	<p class="leading-relaxed text-base flex-grow">
+		{description}
+	</p>
+
+	<ul class="flex gap-4 items-center justify-center">
+		{#each stack as tech}
+			<li class="text-gray-300">
+				<iconify-icon icon="simple-icons:{tech}" width={ICON_SIZE} />
+			</li>
+		{/each}
+	</ul>
+	<hr class="opacity-50 -mx-4" />
+	<div class="flex gap-4 items-center justify-between">
+		<p>
+			<a href={url} target="_blank"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} /></a>
+			<a href={repo} target="_blank"><iconify-icon icon="mdi:github" width={ICON_SIZE} /></a>
 		</p>
-
-		<ul class="flex gap-4 items-center p-2 justify-center">
-			{#each stack as tech}
-				<li class="text-gray-300">
-					<iconify-icon icon="simple-icons:{tech}" width={ICON_SIZE} />
-				</li>
-			{/each}
-		</ul>
-		<hr class="bg-surface-500 -m-1 mb-2" />
-		<div class="flex gap-4 items-center justify-between">
-			<p>
-				<a href={url} target="_blank"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} /></a>
-				<a href={repo} target="_blank"><iconify-icon icon="mdi:github" width={ICON_SIZE} /></a>
-			</p>
-			<p><a href="/projects/{slug}" class="btn variant-filled-primary uppercase">Saiba mais</a></p>
-		</div>
+		<p><a href="/projects/{slug}" class="btn variant-ghost-primary">Saiba mais</a></p>
 	</div>
 </div>
