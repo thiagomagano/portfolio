@@ -11,7 +11,7 @@
 	const ICON_SIZE = '36px';
 </script>
 
-<div class="p-4 w-full">
+<div class="p-4 w-full min-h-[300px]">
 	<div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg flex flex-col gap-4">
 		<div class="flex items-center justify-center h-44">
 			<img

@@ -11,39 +11,35 @@
 
 	import { fly } from 'svelte/transition';
 
+	import NavLink from '$lib/components/NavLink.svelte';
+
 	export let data;
 
 	const SOCIAL_ICON_SIZE = '24';
 </script>
 
 <Toast position="t" />
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell slotSidebarLeft="w-56 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar>
+		<AppBar background="transparent">
 			<svelte:fragment slot="lead">
-				<a href="/" class="flex items-center gap-4">
-					<Avatar src="/images/avatar.jpg" width="w-12" rounded="rounded-full" />
+				<a
+					href="/"
+					class="btn btn-sm border-b-transparent border-b-4 hover:border-b-primary-500 hover:text-opacity-75"
+				>
+					<span>Thiago Magano</span>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a href="/projects" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:code-tags" width="24" /> <span>Meus Projetos</span></a
-				>
-				<a href="/about" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:about-outline" width="24" /> <span>Quem eu sou?</span></a
-				>
-				<a href="/contact" class="btn btn-sm variant-ghost-surface"
-					><iconify-icon icon="mdi:message-outline" width="24" /> <span>Fale Comigo</span></a
-				>
-
-				<a
+				<NavLink href="/projects" icon="mdi:code-tags" label="Meus Projetos" />
+				<NavLink href="/about" icon="mdi:about-outline" label="Quem eu sou?" />
+				<NavLink href="/contact" icon="mdi:message-outline" label="Fale Comigo" />
+				<NavLink
 					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
-					class="btn btn-sm variant-ghost-tertiary"
-				>
-					<iconify-icon icon="mdi:resume" width="24" />
-					<span>Currículo.pdf</span>
-				</a>
+					icon="mdi:resume"
+					label="Currículo.pdf"
+				/>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

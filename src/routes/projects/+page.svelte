@@ -1,6 +1,6 @@
 <script>
 	import Card from '$lib/components/Card.svelte';
-	import { projects } from '$data/projects';
+	import { projects, dummyProjects } from '$data/projects';
 </script>
 
 <section class="">
@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="grid md:grid-cols-2 grid-cols-1">
-			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
+			{#each dummyProjects as { logo, title, subtitle, description, repo, url, stack, slug }}
 				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}
 		</div>
