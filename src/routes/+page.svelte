@@ -11,17 +11,15 @@
 
 	<h1 class="h1 text-center">
 		Prazer, eu sou <span
-			class="bg-gradient-to-br from-surface-400 to-surface-500 bg-clip-text text-transparent box-decoration-clone"
+			class="bg-gradient-to-br from-primary-500 to-primary-400 bg-clip-text text-transparent box-decoration-clone"
 			>Thiago Magano
 		</span>
 	</h1>
 
-	<p>
-		Eu desenvolvo coisas pra web e resolvo problemas perguntando pro Google! Como posso te ajudar?
-	</p>
+	<p>Eu desenvolvo coisas pra web e resolvo problemas perguntando pro Google!</p>
 
 	<div class="group flex gap-4 flex-wrap text-center justify-center">
-		<a href="/contact" class="btn variant-filled-primary min-w-[240px]"> FALE COMIGO</a>
-		<a href="/projects" class="btn variant-ghost-primary"> CONHEÇA MEU TRAMPO</a>
+		<a href="/projects" class="btn variant-filled-primary"> CONHEÇA MEU TRAMPO</a>
+		<a href="/contact" class="btn variant-outline-primary min-w-[240px]"> FALE COMIGO</a>
 	</div>
 </div>

@@ -9,6 +9,10 @@
 
 	import { AppShell, AppBar, Avatar, Toast, toastStore } from '@skeletonlabs/skeleton';
 
+	import { fly } from 'svelte/transition';
+
+	export let data;
+
 	const SOCIAL_ICON_SIZE = '24';
 </script>
 
@@ -43,7 +47,11 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<slot />
+	{#key data.url}
+		<div in:fly={{ x: -200, duration: 300, delay: 300 }} out:fly={{ x: 200, duration: 300 }}>
+			<slot />
+		</div>
+	{/key}
 	<svelte:fragment slot="pageFooter">
 		<div class=" bg-opacity-75 text-center">
 			<div

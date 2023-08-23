@@ -13,7 +13,7 @@
 
 <div class="p-4 w-full">
 	<div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg flex flex-col gap-4">
-		<div class="flex items-center justify-center">
+		<div class="flex items-center justify-center h-44">
 			<img
 				class="rounded w-80 align-middle object-cover object-center"
 				src="/images/logos/{logo}"

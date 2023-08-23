@@ -9,8 +9,7 @@
 
 <div class="container px-5 py-24 mx-auto">
 	<div>
-		<h1 class="text-center h1">{project.title}</h1>
-		<div class="h-1 w-20 bg-surface-500 rounded" />
+		<h1 class="text-center h1 pb-8">{project.title}</h1>
 	</div>
 
 	<Wip />

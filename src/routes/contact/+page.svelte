@@ -52,11 +52,13 @@
 							toastStore.trigger(toastWaiting);
 						}
 
-						return async ({ update }) => {
+						return async ({ update, result }) => {
 							await update();
 							creating = false;
-							toastStore.clear();
-							toastStore.trigger(toastSucess);
+							if ((result.type = 'success')) {
+								toastStore.clear();
+								toastStore.trigger(toastSucess);
+							}
 						};
 					}}
 				>
@@ -67,8 +69,8 @@
 								<input
 									type="text"
 									id="name"
-									name="name"
 									required
+									name="name"
 									class="w-full input variant-ghost-surface bg-opacity-50 rounded border focus:border-surface-300 focus:bg-white focus:text-surface-600 focus:ring-2 focus:ring-indigo-200 outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 								/>
 							</div>
