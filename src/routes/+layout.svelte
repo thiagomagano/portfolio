@@ -1,15 +1,18 @@
-<script>
+<script lang="ts">
 	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 	// This contains the bulk of Skeletons required styles:
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 
+	import type { ToastSettings } from '@skeletonlabs/skeleton';
+
 	import '../app.postcss';
 
-	import { AppShell, AppBar, Avatar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Avatar, Toast, toastStore } from '@skeletonlabs/skeleton';
 
 	const SOCIAL_ICON_SIZE = '24';
 </script>
 
+<Toast position="t" />
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
@@ -17,7 +20,6 @@
 			<svelte:fragment slot="lead">
 				<a href="/" class="flex items-center gap-4">
 					<Avatar src="/images/avatar.jpg" width="w-12" rounded="rounded-full" />
-					<strong class="text-lg uppercase"> TM </strong>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">

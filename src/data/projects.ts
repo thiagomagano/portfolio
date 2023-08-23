@@ -28,7 +28,7 @@ export const projects: Project[] = [
 		stack: ['react', 'tsnode', 'prisma', 'postgresql', 'vercel'],
 		subtitle: 'Quem é este pokémon?',
 		description:
-			'Eu precisava testar minhas habilidades em React e Nodejs, então peguei uma coisa divertida de construir e criei um aplicativo para gerenciar times de pokemons.',
+			'Eu precisava testar minhas habilidades em React e Nodejs, então peguei uma coisa divertida de construir e criei um aplicativo para gerenciar times de pokémon.',
 		logo: 'pokemon.png',
 		printsURL: ['pokemontb-print-001', 'pokemontb-print-002', 'pokemontb-print-003'],
 		url: 'https://pokemonteambuilder.vercel.app/',

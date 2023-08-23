@@ -16,7 +16,7 @@
 			</p>
 		</div>
 
-		<div class="grid grid-cols-2">
+		<div class="grid md:grid-cols-2 grid-cols-1">
 			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
 				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}
