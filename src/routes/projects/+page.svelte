@@ -16,7 +16,7 @@
 			</p>
 		</div>
 
-		<div class="flex flex-wrap -m-4">
+		<div class="grid grid-cols-2">
 			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
 				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}

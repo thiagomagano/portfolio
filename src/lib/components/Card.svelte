@@ -11,10 +11,10 @@
 	const ICON_SIZE = '36px';
 </script>
 
-<div class="xl:w-1/4 md:w-1/2 p-4 flex-shrink">
+<div class="p-4 w-full">
 	<div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg flex flex-col gap-4">
 		<img
-			class=" rounded w-full object-cover object-center"
+			class="rounded w-80 align-middle object-cover object-center"
 			src="/images/logos/{logo}"
 			alt="content"
 		/>

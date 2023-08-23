@@ -21,7 +21,7 @@
 	</p>
 
 	<div class="group flex gap-4 flex-wrap text-center justify-center">
-		<a href="/about" class="btn variant-filled-primary min-w-[240px]"> FALE COMIGO</a>
+		<a href="/contact" class="btn variant-filled-primary min-w-[240px]"> FALE COMIGO</a>
 		<a href="/projects" class="btn variant-ghost-primary"> CONHEÇA MEU TRAMPO</a>
 	</div>
 </div>

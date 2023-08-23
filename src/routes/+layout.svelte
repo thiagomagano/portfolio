@@ -59,6 +59,9 @@
 					<a href="https://twitter.com/thimagano" target="_blank" rel="noreferrer">
 						<iconify-icon icon="mdi:twitter" width={SOCIAL_ICON_SIZE} />
 					</a>
+					<a href="http://instagram.com/thimagano">
+						<iconify-icon icon="mdi:instagram" width={SOCIAL_ICON_SIZE} />
+					</a>
 					<a href="mail:thiagomagano1993@outlok.com" target="_blank" rel="noreferrer">
 						<iconify-icon icon="mdi:email" width={SOCIAL_ICON_SIZE} />
 					</a>
