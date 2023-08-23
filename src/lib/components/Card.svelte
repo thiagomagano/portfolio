@@ -24,7 +24,7 @@
 		<h3 class="tracking-widest text-surface-400 text-xs font-medium title-font mb-1">
 			{subtitle}
 		</h3>
-		<h2 class="text-lg text-white font-medium title-font uppercase">{title}</h2>
+		<h2 class="text-lg text-white font-medium title-font">{title}</h2>
 	</div>
 
 	<p class="leading-relaxed text-base flex-grow">
@@ -44,6 +44,6 @@
 			<a href={url} target="_blank"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} /></a>
 			<a href={repo} target="_blank"><iconify-icon icon="mdi:github" width={ICON_SIZE} /></a>
 		</p>
-		<p><a href="/projects/{slug}" class="btn variant-ghost-primary">Saiba mais</a></p>
+		<p><a href="/projects/{slug}" class="btn variant-filled-primary">Saiba mais</a></p>
 	</div>
 </div>

@@ -3,11 +3,9 @@
 	// This contains the bulk of Skeletons required styles:
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 
-	import type { ToastSettings } from '@skeletonlabs/skeleton';
-
 	import '../app.postcss';
 
-	import { AppShell, AppBar, Avatar, Toast, toastStore } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Toast } from '@skeletonlabs/skeleton';
 
 	import { fly } from 'svelte/transition';
 
@@ -16,7 +14,6 @@
 	export let data;
 
 	const SOCIAL_ICON_SIZE = '24';
-	$: console.log(data.url);
 </script>
 
 <Toast position="t" />

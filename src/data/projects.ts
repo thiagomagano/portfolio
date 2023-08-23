@@ -43,7 +43,7 @@ export const dummyProjects: Project[] = [
 		stack: ['javascript', 'svelte', 'tailwindcss', 'pocketbase', 'amazonaws'],
 		subtitle: 'Tu já andou de fusca?',
 		description:
-			'Nesse projeto utilizei as tecnologias mais inovadoras do mercado para criar o website da loja de carros clássicos Cia do Fusca.',
+			'Nesse projeto utilizei as tecnologias mais inovadoras do mercado para criar o site da loja de carros clássicos Cia do Fusca.',
 		logo: 'ciadofusca.png',
 		printsURL: ['ciadofusca-print-001', 'ciadofusca-print-002', 'ciadofusca-print-003'],
 		url: 'https://ciadofusca.com.br',
