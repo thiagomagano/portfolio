@@ -6,13 +6,13 @@
 </script>
 
 <div class="flex flex-col gap-4 pt-4">
-	<h3 class="h3 text-xl">
+	<h3 class="h3 text-xl text-tertiary-500">
 		{job.title}
 	</h3>
-	<h4 class="text-sm text-tertiary-400 flex justify-between">
+	<h4 class="text-sm flex justify-between">
 		<span>{job.func} </span> <span> {job.year} </span>
 	</h4>
-	<Accordion>
+	<Accordion regionControl="variant-glass" regionCaret="variant-glass" regionPanel="variant-glass">
 		<AccordionItem>
 			<svelte:fragment slot="lead"
 				><span class="mt-1 block"

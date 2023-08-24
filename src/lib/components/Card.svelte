@@ -21,10 +21,10 @@
 	</div>
 
 	<div class="text-center">
+		<h2 class="text-lg text-white font-medium title-font">{title}</h2>
 		<h3 class="tracking-widest text-surface-400 text-xs font-medium title-font mb-1">
 			{subtitle}
 		</h3>
-		<h2 class="text-lg text-white font-medium title-font">{title}</h2>
 	</div>
 
 	<p class="leading-relaxed text-base flex-grow">

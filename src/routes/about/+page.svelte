@@ -16,15 +16,15 @@
 			</p>
 		</div>
 		<div class="flex flex-col gap-4">
-			<h2 class="h2 text-2xl">Resumo Rápido</h2>
+			<h2 class="h2 text-3xl">Resumo Rápido</h2>
 			<p>
-				Sou Desenvolvedor Web Full-Stack e sou de Alvorada-RS. Estou trabalhando na área desde 2020.
+				Sou Desenvolvedor Web FullStack e sou de Alvorada-RS. Estou trabalhando na área desde 2020.
 				Minhas experiência até agora estão baseadas em empresas de educação. No momento estou
 				procurando um novo desafio na carreira para continuar evoluindo.
 			</p>
 		</div>
 		<div class="flex flex-col gap-4 py-8">
-			<h2 class="h2 text-3xl text-center">Carreira</h2>
+			<h2 class="h2 text-3xl">Carreira</h2>
 			{#each jobs as job}
 				<Job {job} />
 			{/each}

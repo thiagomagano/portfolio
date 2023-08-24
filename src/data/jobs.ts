@@ -9,8 +9,8 @@ export interface Job {
 }
 export const jobs: Job[] = [
 	{
-		title: 'Driven Education',
-		func: 'Tutor de Desenvolvimento Web FullStack',
+		title: 'Tutor de Desenvolvimento Web FullStack',
+		func: 'Driven Education',
 		location: 'Remoto',
 		year: '2022 - 2023',
 		descEmployee:
@@ -25,8 +25,8 @@ export const jobs: Job[] = [
 			'Na minha passagem pela Driven desenvolvi muito as minhas "People Skills", comecei a me comunicar melhor, falar pra um grande grupo de pessoa, aprendi a ter conversas dificeis, desenvolver minha paciência e empatia pelas pessoas. Além de aprender muito conteúdo técnico, afinal a melhor forma de aprender é ensinando alguém. Foi muito gratificante ver que ajudei pessoas a conseguirem seu primeiro emprego como programação e aprender demais nesse processo.'
 	},
 	{
-		title: 'SENAI - RS',
-		func: 'Desenvolvedor Front-End',
+		title: 'Desenvolvedor Front-End',
+		func: 'SENAI - RS',
 		location: 'Porto Alegre',
 		year: '2020 - 2022',
 		descEmployee:
@@ -40,8 +40,8 @@ export const jobs: Job[] = [
 			'No SENAI-RS foi minha primeira experiência como desenvolvedor e em uma empresa grande, então tudo era muito novo e todo dia um aprendizado diferente. O que posso destacar é que aprendi a trabalhar melhor em equipe, estimar prazos de tarefas e ter muita resiliência para trabalhar em uma plataforma mais antiga e dar manutenção em códigos legado.'
 	},
 	{
-		title: 'Freelancer',
-		func: 'Dev faz tudo',
+		title: 'Desenvelvedor Web Master Ninja Plus',
+		func: 'Freelancer',
 		location: 'Alvorada',
 		year: '2023 - Presente',
 		descEmployee:
