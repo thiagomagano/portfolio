@@ -4,7 +4,7 @@
 </script>
 
 <section class="">
-	<div class="container px-5 py-24 mx-auto">
+	<div class="container py-24 mx-auto max-w-screen-lg">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Projetos</h1>
@@ -16,7 +16,7 @@
 			</p>
 		</div>
 
-		<div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+		<div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
 			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}
 				<Card {logo} {title} {subtitle} {description} {repo} {url} {stack} {slug} />
 			{/each}
