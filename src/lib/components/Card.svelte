@@ -22,7 +22,7 @@
 
 	<div class="text-center">
 		<h2 class="text-lg text-white font-medium title-font">{title}</h2>
-		<h3 class="tracking-widest text-surface-400 text-xs font-medium title-font mb-1">
+		<h3 class="tracking-widest text-primary-500 text-xs font-medium title-font mb-1">
 			{subtitle}
 		</h3>
 	</div>

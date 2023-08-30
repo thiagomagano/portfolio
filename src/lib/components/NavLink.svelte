@@ -7,8 +7,8 @@
 
 <a
 	{href}
-	class="btn btn-sm border-b-4 hover:border-b-primary-500 {active
-		? 'border-b-surface-500'
+	class="btn btn-sm border-b-4 hover:border-b-tertiary-500 {active
+		? 'border-b-primary-500'
 		: 'border-b-transparent'}"
 >
 	<iconify-icon {icon} width="24" />

@@ -13,10 +13,10 @@
 		Prazer, eu sou <span class="text-primary-500">Thiago Magano </span>
 	</h1>
 
-	<p>Eu desenvolvo coisas pra web e resolvo problemas perguntando pro Google!</p>
+	<p>Eu desenvolvo coisas pra web e resolvo problemas pesquisando no Google!</p>
 
 	<div class="group flex gap-4 flex-wrap text-center justify-center">
 		<a href="/projects" class="btn variant-filled-primary"> Conheça meu trampo!</a>
-		<a href="/contact" class="btn variant-outline-primary min-w-[240px]"> Fale Comigo</a>
+		<a href="/about" class="btn variant-outline-primary"> Mais sobre mim</a>
 	</div>
 </div>

@@ -9,7 +9,7 @@ export interface Job {
 }
 export const jobs: Job[] = [
 	{
-		title: 'Tutor de Desenvolvimento Web FullStack',
+		title: 'Tutor de Desenvolvimento Web Full-Stack',
 		func: 'Driven Education',
 		location: 'Remoto',
 		year: '2022 - 2023',
@@ -30,7 +30,7 @@ export const jobs: Job[] = [
 		location: 'Porto Alegre',
 		year: '2020 - 2022',
 		descEmployee:
-			'O Serviço Nacional de Aprendizagem Industrial do Rio Grande do Sul (SENAI-RS) com mais de 70 anos fortalecendo a industria e o desenvolvimento do país por meio de cursos profissionalizantes.',
+			'O Serviço Nacional de Aprendizagem Industrial do Rio Grande do Sul (SENAI-RS) está a mais de 70 anos fortalecendo a industria e o desenvolvimento do país por meio de cursos profissionalizantes.',
 		descResults: [
 			'Trabalhei como front-end no desenvolvimento, implementação e correção de mais de 50 cursos para plataforma de aprendizagem do SENAI-RS',
 			'Conversão de mais de 30 animações em Flash para tecnologias nativas da Web (HTML, CSS, Javascript)',
@@ -40,7 +40,7 @@ export const jobs: Job[] = [
 			'No SENAI-RS foi minha primeira experiência como desenvolvedor e em uma empresa grande, então tudo era muito novo e todo dia um aprendizado diferente. O que posso destacar é que aprendi a trabalhar melhor em equipe, estimar prazos de tarefas e ter muita resiliência para trabalhar em uma plataforma mais antiga e dar manutenção em códigos legado.'
 	},
 	{
-		title: 'Desenvelvedor Web Master Ninja Plus',
+		title: 'Desenvelvedor Master-Ninja-Plus',
 		func: 'Freelancer',
 		location: 'Alvorada',
 		year: '2023 - Presente',
@@ -48,7 +48,7 @@ export const jobs: Job[] = [
 			'Quando sai da Driven por conta do Layoff, tive que achar uma alternativa para continuar na ativa e me desenvolver mais como Desenvolvedor. Por isso decidi pegar alguns jobs como freelancer.',
 		descResults: [
 			'Até o momento consegui apenas um único trabalho, mas deu bastante trabalho, graças a deus rs.',
-			'Foi o desenvolvimento da loja de carros antigos Cia do Fusca, pode conferir mais detalhes <a href="/projects/ciadofusca"> aqui </a>'
+			'Foi o desenvolvimento da loja de carros antigos Cia do Fusca, pode conferir mais detalhes <a class="font-bold text-tertiary-400" href="/projects"> aqui.</a>'
 		],
 		descLearns:
 			'Nessa minha jornada como Freela sinto que tecnicamente foi onde mais aprendi. Ter que montar um projeto do zero, lidar com cliente,  passar por cada problema de implementação e criar uma solução, sinto que me ajudou demais na minha resolução de problema e me fez acreditar que posso construir qualquer coisa, só vai depender do tempo e da minha dedicação.'

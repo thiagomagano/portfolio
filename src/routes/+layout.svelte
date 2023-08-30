@@ -17,7 +17,7 @@
 </script>
 
 <Toast position="t" />
-<AppShell slotSidebarLeft="w-56 p-4">
+<AppShell slotSidebarLeft="w-56 p-4" slotPageContent="px-4 md:px-0">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar background="transparent">
@@ -51,11 +51,11 @@
 					label="Fale Comigo"
 					active={data.url === '/contact'}
 				/>
-				<NavLink
+				<!-- <NavLink
 					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
 					icon="mdi:resume"
 					label="Currículo.pdf"
-				/>
+				/> -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

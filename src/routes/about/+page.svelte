@@ -8,19 +8,20 @@
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Quem sou eu?</h1>
-				<div class="h-1 w-20 bg-surface-500 rounded" />
+				<div class="h-1 w-20 bg-primary-500 rounded" />
 			</div>
 			<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
 				Opa, essa nem eu sei ahahah, Mas aqui nessa página você encontra um resumo sobre minha
-				carreira profissional, algumas curiosidades e os meus próximos passos.
+				carreira profissional e os meus próximos passos.
 			</p>
 		</div>
 		<div class="flex flex-col gap-4">
 			<h2 class="h2 text-3xl">Resumo Rápido</h2>
 			<p>
-				Sou Desenvolvedor Web FullStack e sou de Alvorada-RS. Estou trabalhando na área desde 2020.
-				Minhas experiência até agora estão baseadas em empresas de educação. No momento estou
-				procurando um novo desafio na carreira para continuar evoluindo.
+				Sou um Desenvolvedor Web Full-stack, sou de Alvorada-RS e trabalho nessa área desde 2020. A
+				linguagem que domino melhor é o JavaScript e minhas principais experiências foram na área de
+				educação. No momento, estou procurando por um novo desafio para continuar evoluindo na minha
+				carreira.
 			</p>
 		</div>
 		<div class="flex flex-col gap-4 py-8">
@@ -28,6 +29,37 @@
 			{#each jobs as job}
 				<Job {job} />
 			{/each}
+		</div>
+
+		<div class="flex flex-col gap-4 py-8">
+			<h2 class="h2 text-3xl">Próximos Passos</h2>
+			<p>
+				Estou focado em evoluir como desenvolvedor, primeiramente resolvendo problemas reais quando
+				possível e dedicando um tempo para me aprofundar em conhecimentos que me tornem mais
+				eficiente, tais como algoritmo, código limpo, padrões de projeto e arquitetura de software.
+			</p>
+			<p>
+				Estou a procura de um novo desafio onde possa integrar uma equipe e vivenciar a experiência
+				de desenvolver projetos de larga escala. Além disso, desejo contribuir para tornar a vida
+				das pessoas melhor, caso seja possível.
+			</p>
+		</div>
+		<div class="flex flex-col gap-4 py-4">
+			<h2 class="h2 text-3xl">Eai, curtiu?</h2>
+			<p>
+				Caso tu tenha se interessado, você pode entrar em contato comigo clicando
+				<a href="/contact" class="font-bold text-tertiary-400">aqui</a>.<br />Vai ser um prazer
+				conversar contigo e ver como nós podemos nos ajudar!
+			</p>
+			<div class="py-4 flex gap-4 flex-wrap md:flex-1">
+				<a class="btn variant-filled-primary flex-grow" href="/contact">Fale comigo</a>
+				<a class="btn variant-filled-primary flex-grow" href="/projects">Conheça meus projetos</a>
+				<a
+					class="btn variant-outline-primary flex-grow"
+					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
+					download="/documents/CV-Thiago_Magano_Vargas-2023.pdf">Baixe meu currículo em PDF</a
+				>
+			</div>
 		</div>
 	</div>
 </section>

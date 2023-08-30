@@ -6,10 +6,10 @@
 </script>
 
 <div class="flex flex-col gap-4 pt-4">
-	<h3 class="h3 text-xl text-tertiary-500">
+	<h3 class="h3 text-xl">
 		{job.title}
 	</h3>
-	<h4 class="text-sm flex justify-between">
+	<h4 class="text-sm flex justify-between text-primary-500">
 		<span>{job.func} </span> <span> {job.year} </span>
 	</h4>
 	<Accordion regionControl="variant-glass" regionCaret="variant-glass" regionPanel="variant-glass">
@@ -32,7 +32,7 @@
 			<svelte:fragment slot="content"
 				><ul class="list-disc list-inside">
 					{#each job.descResults as results}
-						<li class="list-item py-2">{results}</li>
+						<li class="list-item py-2">{@html results}</li>
 					{/each}
 				</ul></svelte:fragment
 			>
