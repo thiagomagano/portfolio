@@ -2,6 +2,8 @@
 	import { enhance } from '$app/forms';
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 
+	import Headline from '$lib/components/Headline.svelte';
+
 	const SOCIAL_ICON_SIZE = '34';
 
 	let creating = false;
@@ -12,7 +14,9 @@
 
 	export let form;
 
-	import { toastStore, type ToastSettings } from '@skeletonlabs/skeleton';
+	import { getToastStore, type ToastSettings } from '@skeletonlabs/skeleton';
+
+	const toastStore = getToastStore();
 
 	const toastSucess: ToastSettings = {
 		message: 'Mensagem enviada com sucesso! ✅',
@@ -27,16 +31,12 @@
 
 <section class="body-font relative">
 	<div class="container py-24 mx-auto max-w-screen-lg">
-		<div class="flex flex-wrap w-full mb-20">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Contato</h1>
-				<div class="h-1 w-20 bg-primary-500 rounded" />
-			</div>
-			<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
-				Opa, que bom que tu quer falar comigo. Tu podes fazer isso utilizando o formulário ou pelas
-				redes sociais abaixo.
-			</p>
-		</div>
+		<Headline
+			headline="Contato"
+			description="Opa, que bom que tu quer falar comigo. Tu podes fazer isso utilizando o formulário ou pelas
+				redes sociais abaixo."
+		/>
+
 		<div class="grid md:grid-cols-2 grid-cols-1 items-start gap-8 md:gap-0">
 			{#if creating}
 				<div class="flex flex-col gap-4">
@@ -70,7 +70,7 @@
 								id="name"
 								required
 								name="name"
-								class="w-full input variant-ghost-surface bg-opacity-50 rounded border focus:border-surface-300 focus:bg-white focus:text-surface-600 focus:ring-2 focus:ring-indigo-200 outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+								class="w-full input variant-ghost-surface bg-opacity-50 rounded border focus:border-surface-300 focus:bg-inherit focus:text-surface-600 focus:ring-2 focus:ring-indigo-200 outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 							/>
 						</div>
 						{#if form?.missingName}

@@ -1,20 +1,16 @@
 <script>
 	import Card from '$lib/components/Card.svelte';
 	import { projects, dummyProjects } from '$data/projects';
+	import Headline from '$lib/components/Headline.svelte';
 </script>
 
 <section class="">
 	<div class="container py-24 mx-auto max-w-screen-lg">
-		<div class="flex flex-wrap w-full mb-20">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Projetos</h1>
-				<div class="h-1 w-20 bg-primary-500 rounded" />
-			</div>
-			<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
-				Aqui estão os principais projetos que desenvolvi, você pode clicar nos cards para saber mais
-				informações sobre eles.
-			</p>
-		</div>
+		<Headline
+			headline="Projetos"
+			description="Aqui estão os principais projetos que desenvolvi, você pode clicar nos cards para saber mais
+				informações sobre eles."
+		/>
 
 		<div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
 			{#each projects as { logo, title, subtitle, description, repo, url, stack, slug }}

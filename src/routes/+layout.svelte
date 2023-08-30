@@ -1,11 +1,9 @@
 <script lang="ts">
-	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
-	// This contains the bulk of Skeletons required styles:
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-
 	import '../app.postcss';
 
-	import { AppShell, AppBar, Toast } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Toast, LightSwitch, initializeStores } from '@skeletonlabs/skeleton';
+
+	initializeStores();
 
 	import { fly } from 'svelte/transition';
 
@@ -20,19 +18,24 @@
 <AppShell slotSidebarLeft="w-56 p-4" slotPageContent="px-4 md:px-0">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar background="transparent">
+		<AppBar
+			background="transparent"
+			gridColumns="grid-cols-3"
+			slotDefault="place-self-center"
+			slotTrail="place-content-end"
+		>
 			<svelte:fragment slot="lead">
 				<a
 					href="/"
-					class="btn btn-sm border-b-4 hover:border-b-primary-500 hover:text-opacity-75 {data.url ===
+					class="btn btn-sm border-b-4 hover:border-b-surface-500 hover:text-opacity-75 {data.url ===
 					'/'
-						? 'border-b-surface-500'
+						? 'border-b-primary-500'
 						: 'border-b-transparent'}"
 				>
 					<span>Thiago Magano</span>
 				</a>
 			</svelte:fragment>
-			<svelte:fragment slot="trail">
+			<svelte:fragment slot="default">
 				<NavLink
 					href="/projects"
 					icon="mdi:code-tags"
@@ -57,6 +60,8 @@
 					label="Currículo.pdf"
 				/> -->
 			</svelte:fragment>
+
+			<svelte:fragment slot="trail"><LightSwitch /></svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	{#key data.url}

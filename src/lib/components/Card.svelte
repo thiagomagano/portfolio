@@ -12,7 +12,9 @@
 </script>
 
 <div class="card flex flex-col gap-4 p-4 shadow-lg variant-glass text-center">
-	<div class="flex items-center justify-center h-44">
+	<div
+		class="flex items-center justify-center h-44 dark:bg-transparent dark:mx-0 bg-slate-800 -mx-4"
+	>
 		<img
 			class="rounded w-80 align-middle object-cover object-center"
 			src="/images/logos/{logo}"
@@ -21,7 +23,7 @@
 	</div>
 
 	<div class="text-center">
-		<h2 class="text-lg text-white font-medium title-font">{title}</h2>
+		<h2 class="text-lg font-medium title-font">{title}</h2>
 		<h3 class="tracking-widest text-primary-500 text-xs font-medium title-font mb-1">
 			{subtitle}
 		</h3>
@@ -33,7 +35,7 @@
 
 	<ul class="flex gap-4 items-center justify-center">
 		{#each stack as tech}
-			<li class="text-gray-300">
+			<li class="">
 				<iconify-icon icon="simple-icons:{tech}" width={ICON_SIZE} />
 			</li>
 		{/each}
