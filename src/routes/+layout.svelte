@@ -83,11 +83,15 @@
 					<a href="https://github.com/thiagomagano" target="_blank" rel="noreferrer">
 						<iconify-icon icon="mdi:github" width={SOCIAL_ICON_SIZE} />
 					</a>
-					<a href="https://twitter.com/thimagano" target="_blank" rel="noreferrer">
-						<iconify-icon icon="mdi:twitter" width={SOCIAL_ICON_SIZE} />
-					</a>
+
 					<a href="http://instagram.com/thimagano">
 						<iconify-icon icon="mdi:instagram" width={SOCIAL_ICON_SIZE} />
+					</a>
+					<a
+						class="hover:underline"
+						href="https://api.whatsapp.com/send?phone=51993438767&text=Olá Thiago, Gostaria de falar com você"
+					>
+						<iconify-icon icon="mdi:whatsapp" width={SOCIAL_ICON_SIZE} />
 					</a>
 					<a href="mail:thiagomagano1993@outlok.com" target="_blank" rel="noreferrer">
 						<iconify-icon icon="mdi:email" width={SOCIAL_ICON_SIZE} />

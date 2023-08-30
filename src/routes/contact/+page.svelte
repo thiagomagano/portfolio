@@ -5,6 +5,8 @@
 	import Headline from '$lib/components/Headline.svelte';
 
 	const SOCIAL_ICON_SIZE = '34';
+	const PHONE = '51993438767';
+	const BODYMSG = 'Olá Thiago, Estava olhando seu site e gostaria de falar com você!';
 
 	let creating = false;
 	const conicStops = [
@@ -115,16 +117,21 @@
 			{/if}
 			<ul class="grid w-full grid-cols-1 gap-8 py-4 md:pt-9">
 				<li class="flex gap-2 items-center">
+					<iconify-icon icon="mdi:whatsapp" width={SOCIAL_ICON_SIZE} />
+					<a
+						class="hover:underline"
+						href="https://api.whatsapp.com/send?phone={PHONE}&text={BODYMSG}"
+					>
+						Whatsapp
+					</a>
+				</li>
+				<li class="flex gap-2 items-center">
 					<iconify-icon icon="mdi:linkedin" width={SOCIAL_ICON_SIZE} />
 					<a class="hover:underline" href="http://linkedin.com/in/thiagomagano"> Linkedin </a>
 				</li>
 				<li class="flex gap-2 items-center">
 					<iconify-icon icon="mdi:github" width={SOCIAL_ICON_SIZE} />
 					<a class="hover:underline" href="http://github.com/thiagomagano"> Github </a>
-				</li>
-				<li class="flex gap-2 items-center">
-					<iconify-icon icon="mdi:twitter" width={SOCIAL_ICON_SIZE} />
-					<a class="hover:underline" href="http://twitter.com/thimagano"> Twitter</a>
 				</li>
 				<li class="flex gap-2 items-center">
 					<iconify-icon icon="mdi:instagram" width={SOCIAL_ICON_SIZE} />

@@ -13,7 +13,7 @@
 
 <div class="card flex flex-col gap-4 p-4 shadow-lg variant-glass text-center">
 	<div
-		class="flex items-center justify-center h-44 dark:bg-transparent dark:mx-0 bg-slate-800 -mx-4"
+		class="flex items-center justify-center h-44 dark:bg-transparent dark:mx-0 bg-primary-500 -mx-4"
 	>
 		<img
 			class="rounded w-80 align-middle object-cover object-center"

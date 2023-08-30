@@ -10,7 +10,7 @@
 	<Avatar src="/images/avatar.jpg" width="w-64" rounded="rounded-full" initials="TM" />
 
 	<h1 class="h1 text-center">
-		Prazer, eu sou <span class="text-primary-500">Thiago Magano </span>
+		Prazer, eu sou <span class="text-primary-400-500-token">Thiago Magano </span>
 	</h1>
 
 	<p>Eu desenvolvo coisas pra web e resolvo problemas pesquisando no Google!</p>
