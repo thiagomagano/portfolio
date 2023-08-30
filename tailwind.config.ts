@@ -4,7 +4,7 @@ import type { Config } from 'tailwindcss';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
 /** @type {import('tailwindcss').Config}*/
-const config = {
+const config: Config = {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
