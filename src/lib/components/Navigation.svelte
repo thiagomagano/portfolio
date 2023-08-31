@@ -37,15 +37,11 @@
 	];
 </script>
 
-<nav class="list-nav p-4 py-8">
-	<ul>
+<nav class="list-nav p-4">
+	<ul class="flex flex-col flex-start">
 		{#each navData as { slug, icon, label }}
 			<li>
-				<a
-					href={slug}
-					class="btn btn-sm border-b-4 border-transparent hover:border-b-tertiary-500"
-					on:click={drawerClose}
-				>
+				<a href={slug} class="" on:click={drawerClose}>
 					<iconify-icon {icon} width="24" />
 					<span>{label}</span>
 				</a>

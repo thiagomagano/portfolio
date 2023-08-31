@@ -18,10 +18,9 @@
 
 	import NavLink from '$lib/components/NavLink.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import SocialLinks from '$lib/components/SocialLinks.svelte';
 
 	export let data;
-
-	const SOCIAL_ICON_SIZE = '24';
 
 	function drawerOpen(): void {
 		drawerStore.open({});
@@ -30,9 +29,10 @@
 
 <Toast position="t" />
 <Drawer bgDrawer="variant-glass">
-	<h2 class="h2 p-4">Navegação</h2>
+	<h2 class="py-4 pl-8">Thiago Magano</h2>
 	<hr />
 	<Navigation />
+	<SocialLinks iconSize="28" classes="flex p-4 pl-8 align-center gap-2 " />
 </Drawer>
 
 <AppShell slotSidebarLeft="w-56 p-4" slotPageContent="px-4 md:px-0">
@@ -109,27 +109,7 @@
 			>
 				<p class="text-gray-400 text-sm text-center sm:text-left">© 2023 Thiago Magano</p>
 
-				<div class="mt-2">
-					<a href="https://linkedin.com/in/thiagomagano" target="_blank" rel="noreferrer">
-						<iconify-icon icon="mdi:linkedin" width={SOCIAL_ICON_SIZE} />
-					</a>
-					<a href="https://github.com/thiagomagano" target="_blank" rel="noreferrer">
-						<iconify-icon icon="mdi:github" width={SOCIAL_ICON_SIZE} />
-					</a>
-
-					<a href="http://instagram.com/thimagano">
-						<iconify-icon icon="mdi:instagram" width={SOCIAL_ICON_SIZE} />
-					</a>
-					<a
-						class="hover:underline"
-						href="https://api.whatsapp.com/send?phone=51993438767&text=Olá Thiago, Gostaria de falar com você"
-					>
-						<iconify-icon icon="mdi:whatsapp" width={SOCIAL_ICON_SIZE} />
-					</a>
-					<a href="mail:thiagomagano1993@outlok.com" target="_blank" rel="noreferrer">
-						<iconify-icon icon="mdi:email" width={SOCIAL_ICON_SIZE} />
-					</a>
-				</div>
+				<SocialLinks iconSize="28" classes="mt-2" />
 			</div>
 		</div>
 	</svelte:fragment>
