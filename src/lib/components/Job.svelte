@@ -20,7 +20,9 @@
 				</span></svelte:fragment
 			>
 			<svelte:fragment slot="summary">Qual é a dessa empresa?</svelte:fragment>
-			<svelte:fragment slot="content">{job.descEmployee}</svelte:fragment>
+			<svelte:fragment slot="content"
+				><p class="leading-loose">{job.descEmployee}</p></svelte:fragment
+			>
 		</AccordionItem>
 		<AccordionItem>
 			<svelte:fragment slot="lead"
@@ -44,7 +46,8 @@
 				</span></svelte:fragment
 			>
 			<svelte:fragment slot="summary">O que eu aprendi?</svelte:fragment>
-			<svelte:fragment slot="content">{job.descLearns}</svelte:fragment>
+			<svelte:fragment slot="content"><p class="leading-loose">{job.descLearns}</p></svelte:fragment
+			>
 		</AccordionItem>
 	</Accordion>
 </div>

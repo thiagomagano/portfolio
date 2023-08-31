@@ -1,28 +1,49 @@
 <script lang="ts">
 	import '../app.postcss';
 
-	import { AppShell, AppBar, Toast, LightSwitch, initializeStores } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		AppBar,
+		Toast,
+		LightSwitch,
+		initializeStores,
+		Drawer,
+		getDrawerStore
+	} from '@skeletonlabs/skeleton';
 
 	initializeStores();
+	const drawerStore = getDrawerStore();
 
 	import { fly } from 'svelte/transition';
 
 	import NavLink from '$lib/components/NavLink.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
 
 	export let data;
 
 	const SOCIAL_ICON_SIZE = '24';
+
+	function drawerOpen(): void {
+		drawerStore.open({});
+	}
 </script>
 
 <Toast position="t" />
+<Drawer bgDrawer="variant-glass">
+	<h2 class="h2 p-4">Navegação</h2>
+	<hr />
+	<Navigation />
+</Drawer>
+
 <AppShell slotSidebarLeft="w-56 p-4" slotPageContent="px-4 md:px-0">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar
 			background="transparent"
 			gridColumns="grid-cols-3"
-			slotDefault="place-self-center"
-			slotTrail="place-content-end"
+			slotLead="lg:place-self-start place-self-center lg:order-1 order-2"
+			slotDefault="lg:place-self-center place-self-start order-1 lg:order-2"
+			slotTrail="place-content-end order-3"
 		>
 			<svelte:fragment slot="lead">
 				<a
@@ -32,33 +53,45 @@
 						? 'border-b-primary-500'
 						: 'border-b-transparent'}"
 				>
-					<span>Thiago Magano</span>
+					<span class="font-bold tracking-wide">Thiago Magano</span>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="default">
-				<NavLink
-					href="/projects"
-					icon="mdi:code-tags"
-					label="Meus Projetos"
-					active={data.url === '/projects'}
-				/>
-				<NavLink
-					href="/about"
-					icon="mdi:about-outline"
-					label="Quem eu sou?"
-					active={data.url === '/about'}
-				/>
-				<NavLink
-					href="/contact"
-					icon="mdi:message-outline"
-					label="Fale Comigo"
-					active={data.url === '/contact'}
-				/>
-				<!-- <NavLink
+				<nav class="lg:flex hidden flex-nowrap gap-2">
+					<NavLink
+						href="/projects"
+						icon="mdi:code-tags"
+						label="Meus Projetos"
+						active={data.url === '/projects'}
+					/>
+					<NavLink
+						href="/about"
+						icon="mdi:about-outline"
+						label="Quem eu sou?"
+						active={data.url === '/about'}
+					/>
+					<NavLink
+						href="/contact"
+						icon="mdi:message-outline"
+						label="Fale Comigo"
+						active={data.url === '/contact'}
+					/>
+					<!-- <NavLink
 					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
 					icon="mdi:resume"
 					label="Currículo.pdf"
 				/> -->
+				</nav>
+
+				<button class="lg:hidden btn btn-sm" on:click={drawerOpen}>
+					<span>
+						<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+							<rect width="100" height="20" />
+							<rect y="30" width="100" height="20" />
+							<rect y="60" width="100" height="20" />
+						</svg>
+					</span>
+				</button>
 			</svelte:fragment>
 
 			<svelte:fragment slot="trail"><LightSwitch /></svelte:fragment>
