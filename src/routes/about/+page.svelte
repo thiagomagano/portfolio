@@ -54,8 +54,8 @@
 				<a class="btn variant-filled-primary flex-grow" href="/projects">Conheça meus projetos</a>
 				<a
 					class="btn variant-outline-primary flex-grow"
-					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
-					download="/documents/CV-Thiago_Magano_Vargas-2023.pdf">Baixe meu currículo em PDF</a
+					href="/documents/CV-ThiagoMagano-2024-1.pdf"
+					download="/documents/CV-ThiagoMagano-2024-1.pdf">Baixe meu currículo em PDF</a
 				>
 			</div>
 		</div>
