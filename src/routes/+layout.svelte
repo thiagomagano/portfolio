@@ -76,11 +76,12 @@
 						label="Fale Comigo"
 						active={data.url === '/contact'}
 					/>
-					<!-- <NavLink
-					href="/documents/CV-Thiago_Magano_Vargas-2023.pdf"
-					icon="mdi:resume"
-					label="Currículo.pdf"
-				/> -->
+					<NavLink
+					href="/documents/CV-ThiagoMagano-2024-1.pdf"
+					icon="mdi:download"
+					label="Currículo"
+					/>
+				
 				</nav>
 
 				<button class="lg:hidden btn btn-sm" on:click={drawerOpen}>
