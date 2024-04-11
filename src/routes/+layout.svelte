@@ -77,11 +77,10 @@
 						active={data.url === '/contact'}
 					/>
 					<NavLink
-					href="/documents/CV-ThiagoMagano-2024-1.pdf"
-					icon="mdi:download"
-					label="Currículo"
+						href="/documents/CV-ThiagoMagano-2024-1.pdf"
+						icon="mdi:download"
+						label="Currículo"
 					/>
-				
 				</nav>
 
 				<button class="lg:hidden btn btn-sm" on:click={drawerOpen}>
@@ -99,7 +98,10 @@
 		</AppBar>
 	</svelte:fragment>
 	{#key data.url}
-		<div in:fly|global={{ x: -200, duration: 300, delay: 300 }} out:fly|global={{ x: 200, duration: 300 }}>
+		<div
+			in:fly|global={{ x: -200, duration: 300, delay: 300 }}
+			out:fly|global={{ x: 200, duration: 300 }}
+		>
 			<slot />
 		</div>
 	{/key}

@@ -1,12 +1,12 @@
 <script lang="ts">
-	export let logo: string = 'dummy.png';
-	export let title: string = 'Title';
-	export let subtitle: string = 'Subtitle';
-	export let description: string = 'A  DESCRIPTION HERE';
-	export let repo: string = '';
-	export let url: string = '';
-	export let stack: string[] = ['javascript, css, html'];
-	export let slug: string = '404';
+	export let logo = 'dummy.png';
+	export let title = 'Title';
+	export let subtitle = 'Subtitle';
+	export let description = 'A  DESCRIPTION HERE';
+	export let repo = '';
+	export let url = '';
+	export let stack = ['javascript, css, html'];
+	export let slug = '404';
 
 	const ICON_SIZE = '36px';
 </script>
