@@ -40,7 +40,7 @@
 		/>
 
 		<div class="grid md:grid-cols-2 grid-cols-1 items-start gap-8 md:gap-0">
-			<!-- {#if creating}
+			{#if creating}
 				<div class="flex flex-col gap-4">
 					<ConicGradient stops={conicStops} spin />
 				</div>
@@ -114,7 +114,7 @@
 						>
 					</div>
 				</form>
-			{/if} -->
+			{/if}
 			<ul class="grid w-full grid-cols-1 gap-8 py-4 md:pt-9">
 				<li class="flex gap-2 items-center">
 					<iconify-icon icon="mdi:whatsapp" width={SOCIAL_ICON_SIZE} />

@@ -80,6 +80,7 @@
 						href="/documents/CV-ThiagoMagano-2024-1.pdf"
 						icon="mdi:download"
 						label="Currículo"
+						target="_blank"
 					/>
 				</nav>
 
