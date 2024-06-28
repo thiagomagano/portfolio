@@ -7,9 +7,8 @@
 <section>
 	<div class="container py-24 mx-auto max-w-screen-lg">
 		<Headline
-			headline="Quem sou eu?"
-			description="Opa, essa nem eu sei ahahah, Mas aqui nessa página você encontra um resumo sobre minha
-				carreira profissional e os meus próximos passos."
+			headline="Quem eu sou?"
+			description="Moreno alto, bonito e sensual, talvez eu seja a solução dos seus problemas.."
 		/>
 
 		<div class="flex flex-col gap-4">

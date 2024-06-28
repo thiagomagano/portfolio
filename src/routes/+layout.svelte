@@ -25,6 +25,9 @@
 	function drawerOpen(): void {
 		drawerStore.open({});
 	}
+
+	const dataAtual = new Date();
+	const anoAtual = dataAtual.getFullYear();
 </script>
 
 <Toast position="t" />
@@ -111,7 +114,7 @@
 			<div
 				class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center items-center gap-4"
 			>
-				<p class="text-gray-400 text-sm text-center sm:text-left">© 2023 Thiago Magano</p>
+				<p class="text-gray-400 text-sm text-center sm:text-left">© {anoAtual} Thiago Magano</p>
 
 				<SocialLinks iconSize="28" classes="mt-2" />
 			</div>

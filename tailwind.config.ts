@@ -20,7 +20,7 @@ const config: Config = {
 		skeleton({
 			themes: {
 				// Register each theme within this array:
-				preset: [{ name: 'gold-nouveau', enhancements: true }]
+				preset: [{ name: 'vintage', enhancements: true }]
 			}
 		})
 	]
