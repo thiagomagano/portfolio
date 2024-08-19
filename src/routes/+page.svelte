@@ -12,19 +12,17 @@
 		width="w-64"
 		rounded="rounded-full"
 		initials="TM"
-		alt="Criado por IA"
+		alt="Foto de Thiago Magano"
 	/>
 
 	<div class="flex flex-col gap-2">
 		<h1 class="h1 text-4xl font-heading-token">Thiago Magano</h1>
-		<h2 class="h5 text-secondary-5 00">Webmaster</h2>
+		<h2 class="h5 text-secondary-500">Webmaster</h2>
 	</div>
 
 	<p>Solucionando problemas na rede mundial de computadores.</p>
 
 	<div class="flex gap-4">
-		<a href="/about" class="btn variant-filled-primary w-full uppercase font-semibold">
-			Conheça meu trampo</a
-		>
+		<a href="/about" class="btn variant-filled-primary w-full"> Conheça meu trampo</a>
 	</div>
 </div>

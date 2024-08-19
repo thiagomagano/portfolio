@@ -7,6 +7,8 @@ export interface Job {
 	descResults: string[];
 	descLearns: string;
 }
+
+
 export const jobs: Job[] = [
 	{
 		title: 'Tutor de Desenvolvimento Web Full-Stack',

@@ -8,7 +8,6 @@ const config: Config = {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
-		// 3. Append the path to the Skeleton package
 		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
 
@@ -19,8 +18,7 @@ const config: Config = {
 	plugins: [
 		skeleton({
 			themes: {
-				// Register each theme within this array:
-				preset: [{ name: 'vintage', enhancements: true }]
+				preset: [{ name: 'wintry', enhancements: true }]
 			}
 		})
 	]
