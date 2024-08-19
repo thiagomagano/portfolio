@@ -8,7 +8,7 @@
 
 <div class="container mx-auto p-16 space-y-8 flex items-center justify-center flex-col text-center">
 	<Avatar
-		src="/images/avatar.jpg"
+		src="/images/avatr.webp"
 		width="w-64"
 		rounded="rounded-full"
 		initials="TM"
