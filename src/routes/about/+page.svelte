@@ -7,8 +7,8 @@
 <section>
 	<div class="container py-24 mx-auto max-w-screen-lg">
 		<Headline
-			headline="Quem eu sou?"
-			description="Moreno alto, bonito e sensual, talvez eu seja a solução dos seus problemas.."
+			headline="Carreira"
+			description=""
 		/>
 
 		<div class="flex flex-col gap-4">
@@ -53,8 +53,8 @@
 				<a class="btn variant-filled-primary flex-grow" href="/projects">Conheça meus projetos</a>
 				<a
 					class="btn variant-outline-primary flex-grow"
-					href="/documents/CV-ThiagoMagano-2024-1.pdf"
-					download="/documents/CV-ThiagoMagano-2024-1.pdf">Baixe meu currículo em PDF</a
+					href="/documents/curriculo-thiagomagano-2025.pdf"
+					download="/documents/curriculo-thiagomagano-2025.pdf">Baixe meu currículo em PDF</a
 				>
 			</div>
 		</div>

@@ -51,40 +51,44 @@
 			<svelte:fragment slot="lead">
 				<a
 					href="/"
-					class="btn btn-sm border-b-4 hover:border-b-surface-500 hover:text-opacity-75 {data.url ===
+					class="btn btn-sm border-b-4 hover:border-b-surface-500 hover:text-opacity-75 font-mono {data.url ===
 					'/'
 						? 'border-b-primary-500'
 						: 'border-b-transparent'}"
 				>
-					<span class="font-bold tracking-wide">Thiago Magano</span>
+					<span class="font-bold tracking-wide">thiagomagano.com.br</span>
 				</a>
+        
+        
 			</svelte:fragment>
 			<svelte:fragment slot="default">
 				<nav class="lg:flex hidden flex-nowrap gap-2">
 					<NavLink
-						href="/projects"
-						icon="mdi:code-tags"
-						label="Meus Projetos"
-						active={data.url === '/projects'}
-					/>
-					<NavLink
 						href="/about"
-						icon="mdi:about-outline"
-						label="Quem eu sou?"
+						icon="mdi:toolbox-outline"
+						label="Carreira"
 						active={data.url === '/about'}
 					/>
+          <NavLink
+						href="/projects"
+						icon="mdi:code-tags"
+						label="Projetos"
+						active={data.url === '/projects'}
+					/>
+					
 					<NavLink
 						href="/contact"
 						icon="mdi:message-outline"
-						label="Fale Comigo"
+						label="Contato"
 						active={data.url === '/contact'}
 					/>
 					<NavLink
-						href="/documents/CV-ThiagoMagano-2024-1.pdf"
-						icon="mdi:download"
+						href="/documents/curriculo-thiagomagano-2025.pdf"
+						icon="mdi:download-outline"
 						label="Currículo"
 						target="_blank"
 					/>
+          
 				</nav>
 
 				<button class="lg:hidden btn btn-sm" on:click={drawerOpen}>
@@ -104,9 +108,11 @@
 	{#key data.url}
 		<div
 			in:fly|global={{ x: -200, duration: 300, delay: 300 }}
-			out:fly|global={{ x: 200, duration: 300 }}
-		>
+			out:fly|global={{ x: 200, duration: 300 }
+  }
+ >
 			<slot />
+      <hr />
 		</div>
 	{/key}
 	<svelte:fragment slot="pageFooter">

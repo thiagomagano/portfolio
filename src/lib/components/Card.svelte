@@ -6,7 +6,6 @@
 	export let repo = '';
 	export let url = '';
 	export let stack = ['javascript, css, html'];
-	export let slug = '404';
 
 	const ICON_SIZE = '36px';
 </script>
@@ -42,10 +41,9 @@
 	</ul>
 	<hr class="opacity-50 -mx-4" />
 	<div class="flex gap-4 items-center justify-between">
-		<p>
-			<a href={url} target="_blank"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} /></a>
+	
+			<a href={url} target="_blank" class="flex items-center gap-2"><iconify-icon icon="mdi:open-in-new" width={ICON_SIZE} />  <span>Visite</span></a>
 			<a href={repo} target="_blank"><iconify-icon icon="mdi:github" width={ICON_SIZE} /></a>
-		</p>
-		<p><a href="/projects/{slug}" class="btn variant-filled-primary">Saiba mais</a></p>
+		
 	</div>
 </div>
