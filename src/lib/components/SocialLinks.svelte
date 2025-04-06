@@ -16,7 +16,7 @@
 	</a>
 	<a
 		class="hover:underline"
-		href="https://api.whatsapp.com/send?phone=51993438767&text=Olá Thiago, Gostaria de falar com você"
+		href="https://api.whatsapp.com/send?phone=+5551993438767&text=Olá Thiago, Gostaria de falar com você"
 	>
 		<iconify-icon icon="mdi:whatsapp" width={iconSize} />
 	</a>

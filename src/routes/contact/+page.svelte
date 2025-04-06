@@ -4,7 +4,7 @@
 	import Headline from '$lib/components/Headline.svelte';
 
 	const SOCIAL_ICON_SIZE = '42';
-	const PHONE = '51993438767';
+	const PHONE = '+5551993438767';
 	const BODYMSG = 'Olá Thiago, Estava olhando seu site e gostaria de falar com você!';
 
 </script>
